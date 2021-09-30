@@ -5,6 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta property="og:title" content="Welcome, Lost Poet.">
+    <meta property="og:description" content="Tools to help Lost Poets find their way.">
+    <meta property="og:image" content="https://alostpoet.xyz/images/socialiteog.png">
+    <meta property="og:url" content="https://alostpoet.xyz">
+
     <title>Welcome, Lost Poet.</title>
     <style>
         html, body {
@@ -19,10 +25,18 @@
         }
         #container {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             align-content: center;
             height: 100vh;
+        }
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-weight: lighter;
+            margin: 0 0 50px;
+            padding: 0;
+            font-family: Georgia, serif;
         }
         li {
             margin-bottom: 5%;
@@ -44,20 +58,39 @@
         ul {
             list-style: none;
             display: block;
-            width: 50%;
             margin: 0; padding: 0;
             align-self: center;
+        }
+        .muted1, .muted2 {
+            opacity: .6;
+            transition: all .2s ease;
+        }
+        .muted1:hover, .muted2:hover {
+            opacity: 1;
+        }
+        .muted2 {
+            opacity: .3;
+        }
+        .muted2 a {
+            border: none;
         }
     </style>
 </head>
 <body>
 <div id="container">
+    <h1>Welcome, Lost Poet.</h1>
     <ul>
         <li>
-            <a href="https://origin-dropped.alostpoet.xyz">Find your Origin</a>
+            <a href="https://origin-dropped.alostpoet.xyz">Is the Origin dropped yet?</a>
         </li>
         <li>
             <a href="https://poet-decoder.alostpoet.xyz">Reveal a Poet's secret</a>
+        </li>
+        <li class="muted1">
+            <a href="https://twitter.com/11111111111112x">Suggestions?</a>
+        </li>
+        <li class="muted2">
+            <a href="https://opensea.io/assets/0x4b3406a41399c7fd2ba65cbc93697ad9e7ea61e5/16972">Visit the Poet Socialite.</a>
         </li>
     </ul>
 </div>
