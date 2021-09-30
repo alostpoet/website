@@ -1,4 +1,3 @@
-# website
-A Lost Poet's website.
+# Welcome, Lost Poet.
 
 https://alostpoet.xyz
