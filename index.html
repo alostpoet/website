@@ -113,12 +113,22 @@
         .loading #origin {
             display: none;
         }
+
+        @keyframes pulse {
+            0%   { opacity: 1; }
+            50%  { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .pulse {
+            opacity: 1;
+            animation: pulse 2s infinite;
+        }
     </style>
 </head>
 <body class="loading">
 <div id="container">
     <main>
-        <h1>Welcome, Lost Poet.</h1>
+        <h1>Welcome, Lost Poet<span class="pulse">|</span></h1>
         <ul>
             <li>
                 <a href="https://poet-decoder.alostpoet.xyz/">Reveal a Poet's secret</a>
@@ -135,16 +145,13 @@
         </ul>
     </main>
     <footer>
-        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Falostpoet.xyz&count_bg=%2300539E&title_bg=%23000000&icon=&icon_color=%23E7E7E7&title=Lost+Poets+today+%2F+all+time&edge_flat=true"/>
+        <img alt="counter" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Falostpoet.xyz&count_bg=%2300539E&title_bg=%23000000&icon=&icon_color=%23E7E7E7&title=Lost+Poets+today+%2F+all+time&edge_flat=true"/>
         <p><strong>A Lost Poet</strong> provides a set of tools<br>to help figure out the <a href="https://lostpoets.xyz">Lost Poets</a> project.<br></p>
         <p><strong><em>A Lost Poet</em> is <em>not affiliated</em> with the official project.</strong></p>
         <p>All these tools are <a href="https://github.com/alostpoet" target="_blank">open source</a> and run in the visitor's browser. No data and/or information is collected by using these tools.</p>
     </footer>
 </div>
-<script>
-    function beta() {
-        document.body.classList.remove('loading');
-    }
-</script>
+
+<script type="module" src="./dist/app.min.js?v=1633031262441"></script>
 </body>
 </html>
