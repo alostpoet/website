@@ -22,16 +22,19 @@
             font-family: Arial, sans-serif;
             font-weight: bold;
             background: #000;
+            color: #fff;
         }
+        a { color: #fff; }
         #container {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
             height: 100vh;
+            max-width: 350px;
+            margin: 0 auto;
         }
         h1 {
-            color: #fff;
             text-align: center;
             font-weight: lighter;
             margin: 0 0 50px;
@@ -45,7 +48,6 @@
             display: block;
             padding: 20px 30px;
             border: 2px #fff solid;
-            color: #fff;
             text-decoration: none;
             transition: all .2s ease;
             background: rgba(0,0,0,0.8);
@@ -54,6 +56,13 @@
         }
         li a:hover {
             background: rgba(255,255,255,0.2);
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            flex-grow: 1;
         }
         ul {
             list-style: none;
@@ -74,25 +83,40 @@
         .muted2 a {
             border: none;
         }
+        footer {
+            opacity: .6;
+        }
+        footer p {
+            text-align: center;
+            font-weight: normal;
+            font-size: 12px;
+            flex-grow: 0;
+        }
     </style>
 </head>
 <body>
 <div id="container">
-    <h1>Welcome, Lost Poet.</h1>
-    <ul>
-        <li>
-            <a href="https://origin-dropped.alostpoet.xyz">Is the Origin dropped yet?</a>
-        </li>
-        <li>
-            <a href="https://poet-decoder.alostpoet.xyz">Reveal a Poet's secret</a>
-        </li>
-        <li class="muted1">
-            <a href="https://twitter.com/11111111111112x">Suggestions?</a>
-        </li>
-        <li class="muted2">
-            <a href="https://opensea.io/assets/0x4b3406a41399c7fd2ba65cbc93697ad9e7ea61e5/16972">Visit the Poet Socialite.</a>
-        </li>
-    </ul>
+    <main>
+        <h1>Welcome, Lost Poet.</h1>
+        <ul>
+            <li>
+                <a href="https://origin-dropped.alostpoet.xyz">Is the Origin dropped yet?</a>
+            </li>
+            <li>
+                <a href="https://poet-decoder.alostpoet.xyz">Reveal a Poet's secret</a>
+            </li>
+            <li class="muted1">
+                <a href="https://twitter.com/11111111111112x">Suggestions?</a>
+            </li>
+            <li class="muted2">
+                <a href="https://opensea.io/assets/0x4b3406a41399c7fd2ba65cbc93697ad9e7ea61e5/16972">Visit the Poet Socialite.</a>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p><strong>A Lost Poet</strong> provides a set of tools to<br>help figure out the <a href="https://lostpoets.xyz">Lost Poets</a> NFT collectibles.<br></p>
+        <p><strong>A Lost Post is unaffiliated with the official project.</strong></p>
+    </footer>
 </div>
 </body>
 </html>
